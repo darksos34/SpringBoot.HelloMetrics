@@ -1,4 +1,4 @@
-package com.jda.coder.springboothellometrics;
+package com.jda.coder.springboothellometrics.system;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;

@@ -1,4 +1,4 @@
-package com.jda.coder.springboothellometrics;
+package com.jda.coder.springboothellometrics.system;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

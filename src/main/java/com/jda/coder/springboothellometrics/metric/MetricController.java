@@ -1,22 +1,19 @@
-package com.jda.coder.springboothellometrics;
+package com.jda.coder.springboothellometrics.metric;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/metrics")
-public class MetricController {
+public class MetricController implements MetricAPI {
 
     private final MetricService metricService;
 
-    @GetMapping("/status")
+    @Override
     public Metric getStatus() {
-        log.info("Status endpoint called");
+        log.info("Status endpoint called via MetricAPI interface");
         return metricService.getMetrics();
     }
 }

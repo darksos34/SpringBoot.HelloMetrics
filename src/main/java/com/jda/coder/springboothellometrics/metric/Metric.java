@@ -1,4 +1,4 @@
-package com.jda.coder.springboothellometrics;
+package com.jda.coder.springboothellometrics.metric;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
