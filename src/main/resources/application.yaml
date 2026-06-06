@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SpringBoot.HelloMetrics
+management:
+  endpoints:
+    web:
+      exposure:
+        # This exposes all actuator endpoints over HTTP
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
